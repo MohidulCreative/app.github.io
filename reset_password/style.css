@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+/**
+* ! changing default styles of brower
+**/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 35px;
+  font-family: 'Open Sans', sans-serif;
+  background: #edc0bf;
+  background: linear-gradient(90deg, #edc0bf 0,#c4caef 58%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.shape {
+  width: 120px;
+}
+#shape {
+  display: flex;
+  justify-content: center;
+}
+
+/**
+* ! style rules for form section
+**/
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 32%;
+  max-width: 500px;
+  padding: 20px 40px;
+  background: white;
+  box-shadow: 0 3px 5px -1px rgb(0 0 0 / 20%), 0 6px 10px 0 rgb(0 0 0 / 14%), 0 1px 18px 0 rgb(0 0 0 / 12%);
+  border-radius: 10px;
+}
+
+.title {
+  font-size: 20px;
+  word-spacing: 4px;
+  letter-spacing: 2px;
+  margin-bottom: 24px;
+  color: rgb(77, 77, 77);
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+}
+
+form .div input {
+  width: 100%;
+  height: 60px;
+  border-radius: 8px;
+  outline: none;
+  border: 1px solid #c4c4c4;
+  padding: 0 30px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  margin-left: 10px;
+  font-size: 13px;
+  color:#7f808a;
+}
+
+form .div {
+  position: relative;
+  margin-bottom: 15px;
+}
+
+input:focus {
+  border: 2px solid #f2796e;
+}
+
+/**
+* ! style rules for form icons
+**/
+
+form div i {
+  position: absolute;
+  padding: 10px;
+  top: 33px;
+}
+/**
+* ! style rules for error message
+**/
+#errorMsg {
+  text-align: center;
+  color: red;
+  font-size: 13px;
+  margin-top: 7px;
+}
+/**
+* ! style rules for button 
+**/
+
+button {
+  margin-top: 20px; 
+  width: 100%;
+  height: 45px;
+  background-color:#ffc00e;;
+  border: 2px solid #ffc00e;;
+  border-radius: 25px;
+  color: #000;
+  font-size: 13px;
+  letter-spacing: 2.5px;
+  word-spacing: 4px;
+  text-transform: uppercase;
+  cursor: pointer;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.1s ease;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+a {
+  color: #18AB9F;
+  font-weight: bold;
+  letter-spacing: 1px;
+  padding: 2px;
+  text-decoration: none;
+}
+a:hover {
+  border-bottom: 1px solid #18AB9F;
+}
+
+
+/**
+* ! Media Queries are here
+**/
+
+ @media (max-width: 900px) {
+  .container {
+    flex-direction: column;
+  }
+
+  form,
+  .content {
+    width: 100%;
+  }
+
+  .btn {
+    flex-direction: column;
+  }
+  .image {
+    height: 70vh;
+  }
+}
+
+@media (max-width: 425px) {
+  form {
+    padding: 20px;
+  }
+} 

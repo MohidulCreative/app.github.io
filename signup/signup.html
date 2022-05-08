@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <title>Mo3n</title>
+  </head>
+  <body>
+
+      <form id="form" action="" onsubmit="return validateForm()">
+        <div class="img">
+          <img class="shape" src="https://s3.us-east-2.amazonaws.com/ui.glass/shape.svg" alt="">
+        </div>
+        <div class="title">
+          <h4>Sign Up For Free!</h4>
+        </div>
+
+        <!-- /** 
+          * ! Email Input here
+         **/ -->
+
+        <div class="div">
+          <label for="email">Email Address</label>
+          <i class="far fa-envelope"></i>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="elon@spacex.com"
+          />
+          <span class="error" id="error"></span>
+        </div>
+
+        <!-- /** 
+          * ! Password Input here
+         **/ -->
+
+        <div class="div">
+          <label for="password">Password</label>
+          <i class="fas fa-lock"></i>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Password here"
+          />
+          <span class="error" id="error1"></span>
+        </div>
+
+         <!-- /** 
+          * ! user name Input here
+         **/ -->
+
+         <div class="div">
+          <label for="username">Full Name</label>
+          <i class="fas fa-user"></i>
+          <input
+            type="text"
+            name="username"
+            id="username"
+            placeholder="Elon Musk"
+          />
+          <span class="error" id="error2"></span>
+        </div>
+
+         <!-- /** 
+          * ! checkbox Input here
+         **/ -->
+
+        <div class="checkbox">
+          <input type="checkbox" id="checkbox" name ="checkbox" value="yes">
+          <span> I have read & agree to<a href="#"> Mo3n’s Terms of Use </a></span>
+          <p id="message" class="p_text"></p>
+        </div>
+        
+        <button type="submit" id="submit">LET'S DO THIS!</button>
+        <span class="login">Already have an account? <a href="../index.html">LOGIN</a></span>
+
+      </form>
+  
+  </body>
+  <script src="script.js"></script>
+</html>

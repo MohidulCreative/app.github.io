@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <title>Mo3n</title>
+  </head>
+  <body>
+
+      <form id="form" action="app.mo3n.co/test.html" onsubmit="return check_email_pass()">
+        <div id="shape">
+          <img class="shape" src="https://s3.us-east-2.amazonaws.com/ui.glass/shape.svg" alt="">
+        </div>
+        
+        <div class="title">
+          <h4>Sign in</h4>
+        </div>
+
+        <!-- /** 
+          * ! Email Input here
+         **/ -->
+
+        <div class="div">
+          <label for="email">Email Address</label>
+          <i class="far fa-envelope"></i>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="elon@spacex.com"
+          />
+        </div>
+
+        <!-- /** 
+          * ! Password Input here
+         **/ -->
+
+        <div class="div">
+          <label for="password">Password</label>
+          <i class="fas fa-lock"></i>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Password here"
+          />
+        </div>
+        
+        <button type="submit" id="submit">LET'S DO THIS!</button>
+        <p id="errorMsg"></p>
+        <span class="signup"> <a href="reset_password/resetpass.html">FORGOT PASSWORD</a></span>
+       
+        <span class="signup">No account? <a href="signup/signup.html">SIGNUP</a></span>
+
+      </form>
+  
+  </body>
+  <script src="script.js"></script>
+</html>
